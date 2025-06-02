@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SAAI Platform</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #0F172A;
+      color: #E2E8F0;
+    }
+    .gradient-bg {
+      background: linear-gradient(180deg, #1E293B 0%, #0F172A 100%);
+    }
+    .card {
+      background-color: #1E293B;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1);
+    }
+    .btn-primary {
+      background-color: #2DD4BF;
+      color: #0F172A;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #14B8A6;
+    }
+    .section-title {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #94A3B8;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .icon-bg {
+      background-color: rgba(45, 212, 191, 0.1);
+      color: #2DD4BF;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .nav-link {
+      color: #94A3B8;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover,
+    .nav-link.active {
+      color: #2DD4BF;
+    }
+    .footer-link {
+        color: #94A3B8;
+        transition: color 0.3s ease;
+    }
+    .footer-link:hover {
+        color: #E2E8F0;
+    }
+  </style>
+</head>
+<body class="gradient-bg">
+<header class="py-6 sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md shadow-sm">
+<div class="container mx-auto px-4 flex justify-between items-center">
+<div class="flex items-center space-x-2">
+<img alt="SAAI Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFyFSUhpGJzTlaHAWlInIGYn19o5Mh4SZdmHIHyJmp2z_kwvtK4luE3RkgU8RXn98gxC4yu-az6tdsPA_R0xU03dEZpgUgy4qVQqF0bVHqgTlA0F0bmfgfB412PrnfI2Hh8hJ-I91VX1iQ-R4NCSZUdmfBYAqDN7kJ6BJ89W2rXAI-dmE1BSy1FhbSORCokikUX3oJJU6phkXfAn6Fz7MOnl4_T-ofX_II_99NTQQjEusm2pnVEsrZFGKOV9KO0Z0i4GNTRrzFvho"/>
+<span class="text-xl font-semibold text-slate-200">SAAI</span>
+</div>
+<nav class="hidden md:flex items-center space-x-6">
+<a class="nav-link active" href="#">الرئيسية</a>
+<a class="nav-link" href="#">الدورات</a>
+<a class="nav-link" href="#">تواصل معنا</a>
+<a class="nav-link" href="#">عن المنصة</a>
+</nav>
+<div class="flex items-center space-x-4">
+<a class="nav-link flex items-center space-x-1" href="#">
+<span class="material-icons text-xl">person</span>
+<span>تسجيل الدخول</span>
+</a>
+<a class="btn-primary text-sm px-4 py-2" href="#">إنشاء حساب</a>
+</div>
+<button class="md:hidden text-slate-400">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</header>
+<main>
+<section class="py-20 text-center">
+<div class="container mx-auto px-4">
+<h1 class="text-5xl font-bold mb-6 leading-tight text-slate-100">عن منصة <span class="text-teal-400">SAAI</span></h1>
+<p class="text-xl text-slate-400 max-w-3xl mx-auto">نحن نؤمن بقوة التعليم وإمكانية الوصول إلى المعرفة باللغة العربية.</p>
+</div>
+</section>
+<section class="py-16">
+<div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+<div class="card text-center md:text-right">
+<h2 class="text-3xl font-semibold mb-4 text-teal-400">مهمتنا</h2>
+<p class="text-slate-300 leading-relaxed">مهمتنا هي تمكين المتعلمين والمهتمين بالتعلم في مجال الذكاء الاصطناعي من خلال توفير دورات عالية الجودة مصممة خصيصًا باللغة العربية.</p>
+</div>
+<div class="card text-center md:text-right">
+<h2 class="text-3xl font-semibold mb-4 text-teal-400">رؤيتنا</h2>
+<p class="text-slate-300 leading-relaxed">أن نصبح منصة تعليمية رائدة في تعليم الذكاء الاصطناعي مع تركيز على الابتكار والبحث والتعلم مدى الحياة.</p>
+</div>
+</div>
+</section>
+<section class="py-16">
+<div class="container mx-auto px-4">
+<h2 class="section-title">ما نقدمه</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="card text-center">
+<div class="icon-bg mx-auto">
+<span class="material-icons text-3xl">school</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-slate-200">دورات متخصصة</h3>
+<p class="text-slate-400">نقدم مجموعة واسعة من الدورات والدبلومات التعليمية المصممة خصيصًا باللغة العربية.</p>
+</div>
+<div class="card text-center">
+<div class="icon-bg mx-auto">
+<span class="material-icons text-3xl">groups</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-slate-200">مجتمع تعليمي</h3>
+<p class="text-slate-400">مجتمع نشط من المتعلمين والخبراء لتبادل المعرفة والخبرات.</p>
+</div>
+<div class="card text-center">
+<div class="icon-bg mx-auto">
+<span class="material-icons text-3xl">workspace_premium</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-slate-200">شهادات معتمدة</h3>
+<p class="text-slate-400">شهادات معتمدة تعزز فرصك المهنية في مجال الذكاء الاصطناعي.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16">
+<div class="container mx-auto px-4">
+<h2 class="section-title">فريقنا</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="card text-center">
+<img alt="صورة د. عبدالله الخالدي" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-teal-400" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5Qj2LNUA2_ivpg6_G9IlDsxUARUm-OdlbAGYGXz1FE3rnRmHqFwoo_ApXjsD3dYCzOCJMgwOE9S1t0kGjRUGfhqG6GuzxBnD6gItxGl5wK6lDWL_H8u2JK-4sZTiufwe_9qqInLCE-xHutYnMrhvD1jAXPCWtRYFb06paF_cPTMqYl5PIpDg9gg3CTdRPQTT-aq4utoiw01xwyeSoqpx5IPcCNT7umFVNwCgh7DUPSlNQqCsM0pRbbQbLXBsE_U6bd9aK0mENFFc"/>
+<h3 class="text-xl font-semibold mb-1 text-slate-100">د. عبدالله الخالدي</h3>
+<p class="text-teal-400 text-sm mb-2">مؤسس ورئيس التنفيذ</p>
+<p class="text-slate-400 text-sm">خبير في الذكاء الاصطناعي لأكثر من ٢٥ عامًا من الخبرة في مجال التعليم التقني.</p>
+</div>
+<div class="card text-center">
+<img alt="صورة د. سارة المنصور" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-teal-400" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVMJb_oGT6X1yd72AFEWE7c0Dk73ixuw8rXhjDKK0WuwXI2Ii2Bg_FAts7_I3RCwuawrAAtJkyKgi5FYfgNWlx2Zen4TwMc0CZKZsVFYihBbIkyq3pOorE7guIPWtfay7WlIuxsg99W9kC--lxEpU7EdkhKc5DKxf5iHcRIIsbAQKaynhMphyfPKCnedH8HWFXmVhXmCTpNFIe52p8IxLww6MsrJrAF2kuPe1Q9UO0z3VFV0oI0xEQv6kkN4swqfEED-39QFv3kfU"/>
+<h3 class="text-xl font-semibold mb-1 text-slate-100">د. سارة المنصور</h3>
+<p class="text-teal-400 text-sm mb-2">مديرة المناهج التعليمية</p>
+<p class="text-slate-400 text-sm">خبيرة في مجال تطوير المناهج وتطوير المفاهيم التعليمية باللغة العربية.</p>
+</div>
+<div class="card text-center">
+<img alt="صورة م. محمد العمري" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-teal-400" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMc_85kkR8GZ8tD53Mz7XktEmoIoWCNfbxEKyAkei1D6BkswmXyi4hh4zX72h1xQx6FIu0YeNa4m5Y61kRkLvVOKekPs96_--6MuuPcgx_eyVI3edrN-oSRaYdk_fOdtkuX4WNXP9_Bjza2L0qa_M_tIoXmrjd8XL4RccGIuuHy1Og2FGbFfwgrlW6k7kjnMNRbteohWoEUPucBelN9KK10Hg_XrQy_RuQ72mhYrSAIOFJwu7xI2sFaBkHCbXHfAUmPV1VaRX6YW8"/>
+<h3 class="text-xl font-semibold mb-1 text-slate-100">م. محمد العمري</h3>
+<p class="text-teal-400 text-sm mb-2">رئيس قسم الإرشاد</p>
+<p class="text-slate-400 text-sm">متخصص في الإرشاد التعليمي مع شغف كبير لتعليم التقنيات الحديثة.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16">
+<div class="container mx-auto px-4">
+<h2 class="section-title">قيمنا</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="card text-center">
+<div class="icon-bg mx-auto">
+<span class="material-icons text-3xl">lightbulb</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-slate-200">إمكانية الوصول</h3>
+<p class="text-slate-400">نجعل تعليم الذكاء الاصطناعي متاحًا للجميع باللغة العربية.</p>
+</div>
+<div class="card text-center">
+<div class="icon-bg mx-auto">
+<span class="material-icons text-3xl">verified</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-slate-200">الجودة</h3>
+<p class="text-slate-400">نلتزم بتقديم أعلى معايير الجودة في التعليم التقني.</p>
+</div>
+<div class="card text-center">
+<div class="icon-bg mx-auto">
+<span class="material-icons text-3xl">trending_up</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-slate-200">الابتكار</h3>
+<p class="text-slate-400">نواكب أحدث التطورات في مجال الذكاء الاصطناعي وعلوم البيانات.</p>
+</div>
+<div class="card text-center col-span-1 md:col-span-3 mx-auto md:w-1/3">
+<div class="icon-bg mx-auto">
+<span class="material-icons text-3xl">support_agent</span>
+</div>
+<h3 class="text-xl font-semibold mb-2 text-slate-200">دعم المجتمع</h3>
+<p class="text-slate-400">نحن مجتمع داعم للمتعلمين والخبراء في مجال الذكاء الاصطناعي.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-slate-800">
+<div class="container mx-auto px-4 text-center">
+<h2 class="text-3xl font-semibold mb-4 text-slate-100">انضم إلى مجتمع SAAI اليوم</h2>
+<p class="text-lg text-slate-400 mb-8 max-w-2xl mx-auto">ابدأ رحلتك في عالم الذكاء الاصطناعي مع مجتمع من المتعلمين المتحمسين.</p>
+<a class="btn-primary text-lg" href="#">استكشف الدورات</a>
+</div>
+</section>
+</main>
+<footer class="bg-slate-900 py-16 text-slate-400">
+<div class="container mx-auto px-4">
+<div class="grid md:grid-cols-4 gap-8 mb-12">
+<div>
+<div class="flex items-center space-x-2 mb-4">
+<img alt="SAAI Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfwi9w3bXAmVzAjSmw0owTRoMNT-jKQxEmH-buZGndOeK0aE_1LFxDmBhgG33FA5p-_8Kt0Y7P9x81Fd2UCW0VqVKGU5nFLJPjUm-vk8PlZxqQrx7IpX3w52QRhqermPV3aGp1aNbcIxCbCySrKrVCmx2mmlZ1lpFfEX_XLnMXon5xSL8lWZ0ubMrCMVKMo9hil_weXbws8CUcBe3iW47zUkCVQiR6x1JfTBqyTZPaqjWv2RSrfCLB9Zl3FiRexPqDaCmaNbtTgaQ"/>
+<span class="text-xl font-semibold text-slate-200">SAAI</span>
+</div>
+<p class="text-sm mb-4">منصة تعليمية رائدة في الذكاء الاصطناعي باللغة العربية. نقدم دورات متخصصة، مجتمع تعليمي نشط، وشهادات معتمدة لمساعدتك في تحقيق أهدافك المهنية.</p>
+<div class="flex space-x-3">
+<a class="footer-link hover:text-teal-400" href="#"><span class="material-icons">facebook</span></a>
+<a class="footer-link hover:text-teal-400" href="#"><svg aria-hidden="true" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
+<a class="footer-link hover:text-teal-400" href="#"><span class="material-icons">linkedin</span></a>
+</div>
+</div>
+<div>
+<h5 class="text-lg font-semibold text-slate-200 mb-4">روابط سريعة</h5>
+<ul class="space-y-2">
+<li><a class="footer-link" href="#">المنظمة المضيفة</a></li>
+<li><a class="footer-link" href="#">المدربون</a></li>
+<li><a class="footer-link" href="#">الطلاب</a></li>
+<li><a class="footer-link" href="#">تواصل معنا</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-lg font-semibold text-slate-200 mb-4">فئات الدورات</h5>
+<ul class="space-y-2">
+<li><a class="footer-link" href="#">الذكاء الاصطناعي</a></li>
+<li><a class="footer-link" href="#">تعلم الآلة</a></li>
+<li><a class="footer-link" href="#">علوم البيانات</a></li>
+<li><a class="footer-link" href="#">معالجة اللغة الطبيعية</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-lg font-semibold text-slate-200 mb-4">معلومات الاتصال</h5>
+<ul class="space-y-2 text-sm">
+<li class="flex items-start space-x-2">
+<span class="material-icons text-teal-400 mt-1">location_on</span>
+<span>المملكة العربية السعودية، الرياض، شارع الملك فهد</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="material-icons text-teal-400">phone</span>
+<span>+966 12 345 6789</span>
+</li>
+<li class="flex items-center space-x-2">
+<span class="material-icons text-teal-400">email</span>
+<span>info@saai.com</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-700 pt-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-6 md:mb-0">
+<h5 class="text-lg font-semibold text-slate-200 mb-3">اشترك في نشرتنا الإخبارية</h5>
+<p class="text-sm">كن أول من يعرف عن الدورات الجديدة والأخبار.</p>
+</div>
+<form class="flex w-full max-w-md">
+<input class="bg-slate-800 border border-slate-700 rounded-r-md px-4 py-2.5 text-slate-300 focus:ring-teal-500 focus:border-teal-500 flex-grow outline-none" placeholder="البريد الإلكتروني" type="email"/>
+<button class="btn-primary rounded-l-md rounded-r-none px-6" type="submit">اشتراك</button>
+</form>
+</div>
+<div class="mt-8 text-center text-sm">
+<p>© 2024 SAAI. جميع الحقوق محفوظة. <a class="footer-link hover:text-teal-400" href="#">سياسة الخصوصية</a> | <a class="footer-link hover:text-teal-400" href="#">شروط الخدمة</a></p>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
